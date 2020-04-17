@@ -1,0 +1,6 @@
+---
+- name: beuld
+  hosts: web
+  remote_user: root
+  tasks:
+
