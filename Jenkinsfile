@@ -23,6 +23,7 @@ pipeline {
 		      become: true,
 		      playbook: 'playbook.yml'
 		    )
-		}
+		} 
+	    }
 	}
 }
