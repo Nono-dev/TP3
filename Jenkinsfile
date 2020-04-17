@@ -21,6 +21,7 @@ pipeline {
 		    ansiblePlaybook (
 		      colorized: true, 
 		      become: true,
+		      inventory: 'inventaire.ini'
 		      playbook: 'playbook.yml'
 		    )
 		} 
