@@ -16,6 +16,10 @@ pipeline {
 		   sh 'npm test'
 		}
 	   }
-	   
+	    stage('Deploiement') {
+		 steps {
+	   	   sh 'ansible-playbook -i inventaire.ini playbook.yml'
+		 }
+	    }
 	}
 }
